@@ -125,12 +125,12 @@ public:
         vSeeds.emplace_back("dnsseed.thiriumtools.com");
         vSeeds.emplace_back("dnsseed.thiriumpool.org");
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,48);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,65);
+        base58Prefixes[EXT_PUBLIC_KEY] = {0x09, 0x89, 0xFF, 0x1E};
+        base58Prefixes[EXT_SECRET_KEY] = {0x09, 0x89, 0xFF, 0xE4};
 
         bech32_hrp = "ltc";
 
